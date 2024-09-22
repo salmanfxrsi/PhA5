@@ -6,8 +6,47 @@
     <title>Donate Bangladesh</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lexend Font Embed Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- All Font -->
+     <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+        }
+     </style>
 </head>
-<body>
+<body class="font-lexend">
     
+    <!-- Header Started -->
+    <header class="bg-[#F9F7F3] py-6">
+        
+        <!-- Navbar Started -->
+        <nav class="container mx-auto flex justify-between mb-10 flex-col lg:flex-row items-center gap-5 lg:gap-0">
+            
+            <!-- Blog Button -->
+            <div>
+                <button id="blog" class="px-8 py-3 bg-[#B4F461] rounded-lg text-xl font-semibold text-[#111111]">Blog</button>
+            </div>
+            
+            <!-- Logo -->
+            <div class="flex gap-4 items-center">
+                <img src="./assets/logo.png" alt="">
+                <h3 class="text-[#111111] font-semibold text-xl">Donate Bangladesh</h3>
+            </div>
+            
+            <!-- Balance -->
+            <div class="flex items-center gap-1">
+                <img src="./assets/coin.png" alt="">
+                <h4 class="text-[#111111] text-opacity-70"><span id="balance">5500</span>BDT</h4>
+            </div>
+        
+        </nav>
+        <!-- Navbar Ended -->
+
+    </header>
+    <!-- Header Ended -->
+     
 </body>
 </html>
