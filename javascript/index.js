@@ -1,10 +1,12 @@
-// All
+// Total Balance
+const balance = numberFromElements('balance');
 
 
 // Blog Button Event
 document.getElementById('blog').addEventListener('click', function(){
     window.location.href = 'blog.html';
 })
+
 
 // Donation & History Button Event
 
@@ -17,7 +19,6 @@ document.getElementById('donation').addEventListener('click', function(){
     document.getElementById('card-container').classList.remove('hidden')
     document.getElementById('footer').classList.remove('hidden')
 }) 
-
 // History Button
 document.getElementById('history').addEventListener('click', function(){
     document.getElementById('donation').classList.remove('bg-[#B4F461]')
@@ -26,4 +27,10 @@ document.getElementById('history').addEventListener('click', function(){
     document.getElementById('history').classList.remove('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('card-container').classList.add('hidden')
     document.getElementById('footer').classList.add('hidden')
+})
+
+
+// Donate for Flood at Noakhali, Bangladesh Function
+document.getElementById('c1-donation-button').addEventListener('click', function(){
+    numberFromElements('c1-total-donation')
 })

@@ -1,11 +1,12 @@
 // Get Number Of Input By Using This Function
-function getNumberOfInput(id){
+function getValueOfInput(id){
     const value = document.getElementById(id).value;
     return value;
 }
 
 // Get InnerText Of Elements By Using This Function
-function getInnerTextOfElements(id){
+function numberFromElements(id){
     const innerText = document.getElementById(id).innerText;
-    return innerText;
+    const number = parseFloat(innerText);
+    return number;
 }
