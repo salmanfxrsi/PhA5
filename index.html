@@ -21,11 +21,12 @@
 <body class="font-lexend">
     
     <!-- Header Started -->
-    <header class="bg-[#F9F7F3] py-6">
+    <header class="sticky top-0">
         
         <!-- Navbar Started -->
-        <nav class="lg:container mx-auto flex justify-between mb-10 items-center w-11/12">
+        <nav class="bg-[#F9F7F3] py-6">
             
+        <div class="lg:container mx-auto flex justify-between mb-10 items-center w-11/12">
             <!-- Blog Button -->
             <div>
                 <button id="blog" class="px-8 py-3 bg-[#B4F461] rounded-lg text-xl font-semibold text-[#111111]">Blog</button>
@@ -42,29 +43,29 @@
                 <img src="./assets/coin.png" alt="">
                 <h4 class="text-[#111111] text-opacity-70 text-xl font-medium"><span id="balance">5500 </span>BDT</h4>
             </div>
-        
+        </div>
+
         </nav>
         <!-- Navbar Ended -->
+
+        <!-- Donation And History Button -->
+        <section class="flex gap-4 justify-center bg-white pt-20 pb-8">
+            
+            <!-- Donation Button -->
+            <button id="donation" class="bg-[#B4F461] py-4 px-8 rounded-lg text-[#111111] font-semibold text-xl transform duration-500">Donation</button>
+            
+            <!-- History Button -->
+            <button id="history" class="py-4 px-8 rounded-lg text-[#111111] font-semibold text-xl border border-[#111111] border-opacity-30 duration-500">History</button>
+        </section>
 
     </header>
     <!-- Header Ended -->
      
     <!-- Main Started -->
-    <main class="my-20">
-        
-        <!-- Donation And History Button -->
-        <section class="flex gap-4 justify-center">
-            
-            <!-- Donation Button -->
-            <button id="donation" class="bg-[#B4F461] py-4 px-8 rounded-lg text-[#111111] font-semibold text-xl">Donation</button>
-            
-            <!-- History Button -->
-            <button id="history" class="py-4 px-8 rounded-lg text-[#111111] font-semibold text-xl border border-[#111111] border-opacity-30">History</button>
+    <main class="mb-20">
 
-        </section>
-
-        <!-- Donation Cards -->
-        <section class="container mx-auto mt-8">
+        <!-- Donation Cards Started -->
+        <section id="card-container" class="container mx-auto">
 
             <!-- Donate for Flood at Noakhali, Bangladesh -->
             <div class="p-8 flex gap-8 lg:flex-row flex-col">
@@ -128,13 +129,22 @@
             </div>
             
         </section>
+        <!-- Donation Card Ended -->
+
+        <!-- History Card Started -->
+        <section></section>
+        <!-- History Card Ended -->
 
     </main>
     <!-- Main Ended -->
 
     <!-- Footer Started -->
-    <footer class="bg-[#F9F7F3] py-12"></footer>
+    <footer id="footer" class="bg-[#F9F7F3] py-12"></footer>
     <!-- Footer Ended -->
 
+    <!-- Javascript Linked Up -->
+    <script src="./javascript/utilities.js"></script>
+    <script src="./javascript/index.js"></script>
+    
 </body>
 </html>

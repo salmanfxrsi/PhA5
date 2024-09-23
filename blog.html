@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh Blog</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Daisy UI ANd Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lexend Font Embed Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- All Font -->
+    <style>
+        .font-lexend {
+           font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-lexend">
+    
+    <!-- Header Started -->
+    <header class="bg-[#F9F7F3] py-6 sticky top-0">
+        
+        <!-- Navbar Started -->
+        <nav class="lg:container mx-auto flex justify-between mb-10 items-center w-11/12">
+            
+            <!-- Blog Button -->
+            <div>
+                <a href="./index.html"><button id="blog" class="px-8 py-3 bg-[#B4F461] rounded-lg text-xl font-semibold text-[#111111]">Home</button></a>
+            </div>
+            
+            <!-- Logo -->
+            <div class="flex gap-4 items-center">
+                <img src="./assets/logo.png" alt="">
+                <h3 class="text-[#111111] font-semibold text-xl hidden lg:block">Donate Bangladesh Present</h3>
+            </div>
+        
+        </nav>
+        <!-- Navbar Ended -->
+    </header>
+    <!-- Header Ended -->
+
+    <!-- Main Started -->
+    <main>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of the document as a tree of objects, allowing you to manipulate its content and visual presentation. Each object represents a part of the document, such as an element or attribute.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>To select an element from the DOM, you can use methods like getElementById to find an element by its unique ID. If you want to select elements by class, you can use getElementsByClassName, which returns a collection of elements with that class. For selecting elements by tag name, use getElementsByTagName. If you prefer a more flexible approach, querySelector allows you to select the first element that matches a CSS selector, while querySelectorAll retrieves all elements that match the specified selector. Just adjust the selectors based on what you need!</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event delegation is a technique used in JavaScript where a single event listener is added to a parent element instead of each individual child element. This listener captures events that bubble up from the child elements.This approach is useful for several reasons. First, it improves performance by reducing the number of event listeners, which is especially beneficial when dealing with many elements. Second, it makes handling dynamic content easier since newly added child elements automatically inherit the event listener from the parent. Lastly, it simplifies code maintenance by centralizing event handling, making it easier to manage and debug.For instance, if you have a list of buttons, instead of attaching a click listener to each button, you can attach it to the list itself. This way, any button clicked will trigger the same event handler, regardless of when the button was added to the list.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>To manipulate an element's attributes and styles using the DOM in JavaScript, you first access the element. You can change attributes by setting new values or retrieving existing ones. For example, if you want to change an image's source or an anchor's link, you can easily update those attributes directly.When it comes to styles, you can modify an element's appearance by accessing its style property. This allows you to change various CSS properties, such as background color or font size.Overall, these techniques enable you to dynamically update and interact with elements on your web page, enhancing the user experience.</p>
+              </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main Ended -->
+
+    <!-- Footer Started -->
+    <footer></footer>
+    <!-- Footer Ended -->
+
+    <!-- Javascript Linked Up -->
+    <script src="./javascript/utilities.js"></script>
+    <script src="./javascript/index.js"></script>
+  
+</body>
+</html>
