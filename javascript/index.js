@@ -32,5 +32,51 @@ document.getElementById('history').addEventListener('click', function(){
 
 // Donate for Flood at Noakhali, Bangladesh Function
 document.getElementById('c1-donation-button').addEventListener('click', function(){
-    numberFromElements('c1-total-donation')
+    const donationInput = getValueOfInput('c1-donation-input');
+    const balance = numberFromElements('balance');
+    const totalDonation = numberFromElements('c1-total-donation');
+    if(typeof(donationInput) === "number" && donationInput > 0){
+        const donation = totalDonation + donationInput;
+        const latestBalance = balance + donationInput;
+        document.getElementById('c1-total-donation').innerText = donation;
+        document.getElementById('balance').innerText = latestBalance;
+        document.getElementById('c1-donation-input').value = "";
+    }
+    else{
+        alert('Invalid Donation Amount!');
+    }
+})
+
+// Donate for Flood Relief in Feni,Bangladesh
+document.getElementById('c2-donation-button').addEventListener('click', function(){
+    const donationInput = getValueOfInput('c2-donation-input');
+    const balance = numberFromElements('balance');
+    const totalDonation = numberFromElements('c2-total-donation');
+    if(typeof(donationInput) === "number" && donationInput > 0){
+        const donation = totalDonation + donationInput;
+        const latestBalance = balance + donationInput;
+        document.getElementById('c2-total-donation').innerText = donation;
+        document.getElementById('balance').innerText = latestBalance;
+        document.getElementById('c2-donation-input').value = "";
+    }
+    else{
+        alert('Invalid Donation Amount!');
+    }
+})
+
+// Aid for Injured in the Quota Movement
+document.getElementById('c3-donation-button').addEventListener('click', function(){
+    const donationInput = getValueOfInput('c3-donation-input');
+    const balance = numberFromElements('balance');
+    const totalDonation = numberFromElements('c3-total-donation');
+    if(typeof(donationInput) === "number" && donationInput > 0){
+        const donation = totalDonation + donationInput;
+        const latestBalance = balance + donationInput;
+        document.getElementById('c3-total-donation').innerText = donation;
+        document.getElementById('balance').innerText = latestBalance;
+        document.getElementById('c3-donation-input').value = "";
+    }
+    else{
+        alert('Invalid Donation Amount!');
+    }
 })
