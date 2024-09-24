@@ -19,3 +19,16 @@ function showModal(){
 function refreshInput(id){
     document.getElementById(id).value = "";
 }
+
+
+// History 
+function history(inputDonation,text){
+    const context = document.getElementById(text).innerText.split("for");
+    const lastIndex = context[1];
+    const historyDiv = document.createElement('div');
+    historyDiv.innerHTML = `
+    <p class="font-bold text-xl text-[#111111]">${inputDonation} Taka Donated For ${lastIndex}</p>
+    <p class="font-bold text-xl text-[#111111]">${new Date().toLocaleTimeString}</p>
+    `
+    document.getElementById('history-container').appendChild(historyDiv);
+}

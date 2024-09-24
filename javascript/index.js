@@ -14,6 +14,7 @@ document.getElementById('donation').addEventListener('click', function(){
     document.getElementById('donation').classList.remove('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('card-container').classList.remove('hidden')
     document.getElementById('footer').classList.remove('hidden')
+    document.getElementById('history-container').classList.add('hidden')
 }) 
 // History Button
 document.getElementById('history').addEventListener('click', function(){
@@ -23,6 +24,7 @@ document.getElementById('history').addEventListener('click', function(){
     document.getElementById('history').classList.remove('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('card-container').classList.add('hidden')
     document.getElementById('footer').classList.add('hidden')
+    document.getElementById('history-container').classList.remove('hidden')
 })
 
 
@@ -39,6 +41,15 @@ document.getElementById('c1-donation-button').addEventListener('click', function
         document.getElementById('balance').innerText = latestBalance;
         refreshInput('c1-donation-input');
         showModal();
+        const context = document.getElementById("c1-donation-context").innerText.split("for");
+        const lastIndex = context[1];
+        const historyDiv = document.createElement('div');
+        historyDiv.classList = "p-8 border border-[#1111111a] rounded-xl mb-6";
+        historyDiv.innerHTML = `
+        <p class="font-bold text-xl text-[#111111]">${donationInput} Taka Donated For ${lastIndex}</p>
+        <p>${new Date()}</p>
+        `
+        document.getElementById('history-container').append(historyDiv);
         }
         else{
             alert('Add Money For Donation');
@@ -64,6 +75,15 @@ document.getElementById('c2-donation-button').addEventListener('click', function
         document.getElementById('balance').innerText = latestBalance;
         refreshInput('c2-donation-input');
         showModal();
+        const context = document.getElementById("c2-donation-context").innerText.split("for");
+        const lastIndex = context[1];
+        const historyDiv = document.createElement('div');
+        historyDiv.classList = "p-8 border border-[#1111111a] rounded-xl mb-6";
+        historyDiv.innerHTML = `
+        <p class="font-bold text-xl text-[#111111]">${donationInput} Taka Donated For ${lastIndex}</p>
+        <p>${new Date()}</p>
+        `
+        document.getElementById('history-container').append(historyDiv);
         }
         else{
             alert('Add Money For Donation');
@@ -84,11 +104,20 @@ document.getElementById('c3-donation-button').addEventListener('click', function
     if(typeof(donationInput) === "number" && donationInput > 0){
         const donation = totalDonation + donationInput;
         const latestBalance = balance - donationInput;
-        document.getElementById('c3-total-donation').innerText = donation;
         if(latestBalance >= 0){
+        document.getElementById('c3-total-donation').innerText = donation;
         document.getElementById('balance').innerText = latestBalance;
         refreshInput('c3-donation-input');
         showModal();
+        const context = document.getElementById("c3-donation-context").innerText.split("for");
+        const lastIndex = context[1];
+        const historyDiv = document.createElement('div');
+        historyDiv.classList = "p-8 border border-[#1111111a] rounded-xl mb-6";
+        historyDiv.innerHTML = `
+        <p class="font-bold text-xl text-[#111111]">${donationInput} Taka Donated For ${lastIndex}</p>
+        <p>${new Date()}</p>
+        `
+        document.getElementById('history-container').append(historyDiv);
         }
         else{
             alert('Add Money For Donation');
