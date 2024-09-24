@@ -9,3 +9,13 @@ function numberFromElements(id){
     const innerText = parseFloat(document.getElementById(id).innerText);
     return innerText;
 }
+
+// Show Modal Function
+function showModal(){
+    document.getElementById('modal').showModal();
+}
+
+// Fresh Input
+function refreshInput(id){
+    document.getElementById(id).value = "";
+}

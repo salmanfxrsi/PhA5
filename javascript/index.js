@@ -37,13 +37,15 @@ document.getElementById('c1-donation-button').addEventListener('click', function
     const totalDonation = numberFromElements('c1-total-donation');
     if(typeof(donationInput) === "number" && donationInput > 0){
         const donation = totalDonation + donationInput;
-        const latestBalance = balance + donationInput;
+        const latestBalance = balance - donationInput;
         document.getElementById('c1-total-donation').innerText = donation;
         document.getElementById('balance').innerText = latestBalance;
-        document.getElementById('c1-donation-input').value = "";
+        refreshInput('c1-donation-input');
+        showModal();
     }
     else{
         alert('Invalid Donation Amount!');
+        refreshInput('c1-donation-input');
     }
 })
 
@@ -54,13 +56,15 @@ document.getElementById('c2-donation-button').addEventListener('click', function
     const totalDonation = numberFromElements('c2-total-donation');
     if(typeof(donationInput) === "number" && donationInput > 0){
         const donation = totalDonation + donationInput;
-        const latestBalance = balance + donationInput;
+        const latestBalance = balance - donationInput;
         document.getElementById('c2-total-donation').innerText = donation;
         document.getElementById('balance').innerText = latestBalance;
-        document.getElementById('c2-donation-input').value = "";
+        refreshInput('c2-donation-input');
+        showModal();
     }
     else{
         alert('Invalid Donation Amount!');
+        refreshInput('c2-donation-input');
     }
 })
 
@@ -71,12 +75,14 @@ document.getElementById('c3-donation-button').addEventListener('click', function
     const totalDonation = numberFromElements('c3-total-donation');
     if(typeof(donationInput) === "number" && donationInput > 0){
         const donation = totalDonation + donationInput;
-        const latestBalance = balance + donationInput;
+        const latestBalance = balance - donationInput;
         document.getElementById('c3-total-donation').innerText = donation;
         document.getElementById('balance').innerText = latestBalance;
-        document.getElementById('c3-donation-input').value = "";
+        refreshInput('c3-donation-input');
+        showModal();
     }
     else{
         alert('Invalid Donation Amount!');
+        refreshInput('c3-donation-input');
     }
 })

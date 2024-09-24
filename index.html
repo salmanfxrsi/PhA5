@@ -64,6 +64,22 @@
     <!-- Main Started -->
     <main class="mb-20">
 
+        <!-- Donation Confirmation Modal -->
+        <dialog id="modal" class="rounded-3xl">
+            <div class="w-[522px] h-[300px] text-center py-8 space-y-4">
+              <h3 class="text-3xl font-bold">Congrates</h3>
+              <img class="mx-auto" src="./assets/coin.png" alt="">
+              <p class="">You Have Donated For Humankind</p>
+              <p class="text-xl font-bold">Successfully</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="bg-gray-200 px-3 py-2 rounded-lg">Close Confirmation</button>
+                </form>
+              </div>
+            </div>
+        </dialog>
+
         <!-- Donation Cards Started -->
         <section id="card-container" class="container mx-auto">
 
@@ -76,7 +92,7 @@
                 </div>
                 <!-- Card Description -->
                 <div class="flex-1"> 
-                    <div class="py-[10px] px-4 bg-[#111111] bg-opacity-5 w-32 rounded-lg flex gap-3 items-center">
+                    <div class="py-[10px] px-4 bg-[#111111] bg-opacity-5 w-40 rounded-lg flex gap-3 items-center justify-center">
                         <img src="./assets/coin.png" alt="">
                         <p class="text-[#111111] text-opacity-70 text-base"><span id="c1-total-donation">0</span> BDT</p>
                     </div>
@@ -97,9 +113,9 @@
                 </div>
                 <!-- Card Description -->
                 <div class="flex-1"> 
-                    <div class="py-[10px] px-4 bg-[#111111] bg-opacity-5 w-32 rounded-lg flex gap-3 items-center">
+                    <div class="py-[10px] px-4 bg-[#111111] bg-opacity-5 w-40 rounded-lg flex gap-3 items-center justify-center">
                         <img src="./assets/coin.png" alt="">
-                        <p class="text-[#111111] text-opacity-70 text-base"><span id="c2-total-donation">0</span> BDT</p>
+                        <p class="text-[#111111] text-opacity-70 text-base"><span id="c2-total-donation">600</span> BDT</p>
                     </div>
                     <h3 class="text-[#111111] font-bold text-3xl mt-4">Donate for Flood Relief in Feni,Bangladesh</h3>
                     <p class="text-[#111111] text-opacity-70 font-light text-base mt-4">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
@@ -117,9 +133,9 @@
                 </div>
                 <!-- Card Description -->
                 <div class="flex-1"> 
-                    <div class="py-[10px] px-4 bg-[#111111] bg-opacity-5 w-32 rounded-lg flex gap-3 items-center">
+                    <div class="py-[10px] px-4 bg-[#111111] bg-opacity-5 w-40 rounded-lg flex gap-3 items-center justify-center">
                         <img src="./assets/coin.png" alt="">
-                        <p class="text-[#111111] text-opacity-70 text-base"><span id="c3-total-donation">0</span> BDT</p>
+                        <p class="text-[#111111] text-opacity-70 text-base"><span id="c3-total-donation">2400</span> BDT</p>
                     </div>
                     <h3 class="text-[#111111] font-bold text-3xl mt-4">Aid for Injured in the Quota Movement</h3>
                     <p class="text-[#111111] text-opacity-70 font-light text-base mt-4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
