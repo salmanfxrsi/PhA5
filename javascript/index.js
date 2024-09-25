@@ -87,7 +87,7 @@ document.getElementById('c2-donation-button').addEventListener('click', function
         }
         else{
             alert('Add Money For Donation');
-            refreshInput('c1-donation-input');
+            refreshInput('c2-donation-input');
         }
     }
     else{
@@ -121,7 +121,7 @@ document.getElementById('c3-donation-button').addEventListener('click', function
         }
         else{
             alert('Add Money For Donation');
-            refreshInput('c1-donation-input');
+            refreshInput('c3-donation-input');
         }
     }
     else{
