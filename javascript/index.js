@@ -13,7 +13,6 @@ document.getElementById('donation').addEventListener('click', function(){
     document.getElementById('history').classList.add('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('donation').classList.remove('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('card-container').classList.remove('hidden')
-    document.getElementById('footer').classList.remove('hidden')
     document.getElementById('history-container').classList.add('hidden')
 }) 
 // History Button
@@ -23,7 +22,6 @@ document.getElementById('history').addEventListener('click', function(){
     document.getElementById('donation').classList.add('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('history').classList.remove('border', 'border-[#111111]', 'border-opacity-30');
     document.getElementById('card-container').classList.add('hidden')
-    document.getElementById('footer').classList.add('hidden')
     document.getElementById('history-container').classList.remove('hidden')
 })
 
